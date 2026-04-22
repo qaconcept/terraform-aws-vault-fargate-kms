@@ -35,3 +35,21 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Terraform state and backups
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Terraform plan files
+*.tfplan
+
+# Sensitive Vault initialization files
+# (Ignores all JSON files to be safe, or specify filenames)
+*.json
+!managed-config.json  # Example of how to 'un-ignore' a safe file
+
+# Local provider/module cache
+.terraform/
+.terraform.lock.hcl
+tfplan
