@@ -27,3 +27,8 @@ output "efs_id" {
   value       = module.efs.efs_id
   description = "The ID of the EFS file system"
 }
+
+output "vault_url" {
+  description = "The secure URL for your Vault instance"
+  value       = "https://${var.domain_name}"
+}

@@ -1,0 +1,183 @@
+[0m[1mmodule.kms.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.ecs_vault.aws_ecs_cluster.vault: Refreshing state... [id=arn:aws:ecs:us-east-1:581781313195:cluster/production-vault-cluster][0m
+[0m[1mmodule.ecs_vault.aws_iam_role.vault_execution_role: Refreshing state... [id=production-vault-execution-role][0m
+[0m[1mmodule.vpc.module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-0ce025ec4add604ee][0m
+[0m[1mmodule.efs.aws_efs_file_system.vault: Refreshing state... [id=fs-08a58d35fedb55558][0m
+[0m[1mmodule.ecs_vault.aws_cloudwatch_log_group.vault: Refreshing state... [id=/ecs/production-vault][0m
+[0m[1maws_acm_certificate.vault: Refreshing state... [id=arn:aws:acm:us-east-1:581781313195:certificate/8fb54c83-5751-4a7f-85b8-b20db9f20bbf][0m
+[0m[1mmodule.ecs_vault.aws_iam_role.vault_task_role: Refreshing state... [id=production-vault-task-role][0m
+[0m[1mmodule.ecs_vault.aws_lb_listener.vault: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:581781313195:listener/app/production-vault-alb/56369db06947f393/53d858336b1b3c21][0m
+[0m[1mmodule.kms.data.aws_caller_identity.current: Read complete after 0s [id=581781313195][0m
+[0m[1maws_route53_record.vault_validation["vault.sreconcepts.com"]: Refreshing state... [id=Z03624282WCUK4WRD4Q24__0a87d9518a87972769bdb50bf09003f1.vault.sreconcepts.com._CNAME][0m
+[0m[1mmodule.efs.aws_efs_access_point.vault: Refreshing state... [id=fsap-03ccb0554723ed6ed][0m
+[0m[1mmodule.ecs_vault.aws_iam_role_policy_attachment.execution_role_policy: Refreshing state... [id=production-vault-execution-role/arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy][0m
+[0m[1mmodule.ecs_vault.aws_iam_role_policy.vault_efs_access: Refreshing state... [id=production-vault-task-role:production-vault-efs-access][0m
+[0m[1mmodule.kms.data.aws_iam_policy_document.kms_key_policy: Reading...[0m[0m
+[0m[1mmodule.kms.data.aws_iam_policy_document.kms_key_policy: Read complete after 0s [id=1407649806][0m
+[0m[1mmodule.kms.aws_kms_key.vault: Refreshing state... [id=095cd5ee-ff47-417c-8f91-ee923a1a0f1b][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-04b40d9f58a01c8e8][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-057020f967483ff4b][0m
+[0m[1mmodule.ecs_vault.aws_security_group.alb: Refreshing state... [id=sg-0f4c00d4ea2366a74][0m
+[0m[1mmodule.vpc.module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-06aa1377760350f35][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-05ab64baedd99e16d][0m
+[0m[1mmodule.ecs_vault.aws_lb_target_group.vault: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:581781313195:targetgroup/production-vault-tg/d9ee108d43478c31][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-030f55cba75f2928f][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-01485fd45c03aec61][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-002e0171a92a34463][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table.private[1]: Refreshing state... [id=rtb-0a92385db14f6422d][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-0928a12904447271d][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-0374ee114e560d50c][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-03082d6a3ddec396c][0m
+[0m[1mmodule.kms.aws_kms_alias.vault: Refreshing state... [id=alias/vault-unseal-production][0m
+[0m[1mmodule.vpc.module.vpc.aws_eip.nat[1]: Refreshing state... [id=eipalloc-04d1c268c762d13c9][0m
+[0m[1mmodule.vpc.module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-05b92b723f240785b][0m
+[0m[1mmodule.ecs_vault.aws_iam_role_policy.vault_kms_access: Refreshing state... [id=production-vault-task-role:production-vault-kms-access][0m
+[0m[1mmodule.ecs_vault.aws_ecs_task_definition.vault: Refreshing state... [id=vault][0m
+[0m[1mmodule.ecs_vault.aws_security_group.vault_tasks: Refreshing state... [id=sg-026e9577761cd0401][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-0fa7f210bbffae493][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-04c8a23b5fd86d504][0m
+[0m[1mmodule.vpc.module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-0928a12904447271d1080289494][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-0342a1bd83c5b553d][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-08db2b95862be502a][0m
+[0m[1mmodule.ecs_vault.aws_lb.vault: Refreshing state... [id=arn:aws:elasticloadbalancing:us-east-1:581781313195:loadbalancer/app/production-vault-alb/56369db06947f393][0m
+[0m[1mmodule.efs.aws_security_group.efs: Refreshing state... [id=sg-0a8626b99ce96cd50][0m
+[0m[1mmodule.ecs_vault.aws_ecs_service.vault: Refreshing state... [id=arn:aws:ecs:us-east-1:581781313195:service/production-vault-cluster/production-vault-service][0m
+[0m[1mmodule.efs.aws_efs_mount_target.vault[1]: Refreshing state... [id=fsmt-09112d6b26f49aace][0m
+[0m[1mmodule.efs.aws_efs_mount_target.vault[0]: Refreshing state... [id=fsmt-0e4c97326dbd7b302][0m
+[0m[1mmodule.vpc.module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-029ec31000a35d52d][0m
+[0m[1mmodule.vpc.module.vpc.aws_nat_gateway.this[1]: Refreshing state... [id=nat-0c6195c4dfcb94930][0m
+[0m[1mmodule.vpc.module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-002e0171a92a344631080289494][0m
+[0m[1mmodule.vpc.module.vpc.aws_route.private_nat_gateway[1]: Refreshing state... [id=r-rtb-0a92385db14f6422d1080289494][0m
+[0m[1maws_route53_record.vault_alias: Refreshing state... [id=Z03624282WCUK4WRD4Q24_vault.sreconcepts.com_A][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.ecs_vault.aws_lb_listener.vault[0m will be [1m[31mdestroyed[0m
+  # (because aws_lb_listener.vault is not in configuration)
+[0m  [31m-[0m[0m resource "aws_lb_listener" "vault" {
+      [31m-[0m[0m arn                                                                 = "arn:aws:elasticloadbalancing:us-east-1:581781313195:listener/app/production-vault-alb/56369db06947f393/53d858336b1b3c21" [90m-> null[0m[0m
+      [31m-[0m[0m id                                                                  = "arn:aws:elasticloadbalancing:us-east-1:581781313195:listener/app/production-vault-alb/56369db06947f393/53d858336b1b3c21" [90m-> null[0m[0m
+      [31m-[0m[0m load_balancer_arn                                                   = "arn:aws:elasticloadbalancing:us-east-1:581781313195:loadbalancer/app/production-vault-alb/56369db06947f393" [90m-> null[0m[0m
+      [31m-[0m[0m port                                                                = 80 [90m-> null[0m[0m
+      [31m-[0m[0m protocol                                                            = "HTTP" [90m-> null[0m[0m
+      [31m-[0m[0m region                                                              = "us-east-1" [90m-> null[0m[0m
+      [31m-[0m[0m routing_http_response_server_enabled                                = true [90m-> null[0m[0m
+      [31m-[0m[0m tags                                                                = {} [90m-> null[0m[0m
+      [31m-[0m[0m tags_all                                                            = {} [90m-> null[0m[0m
+        [90m# (11 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m default_action {
+          [31m-[0m[0m order            = 1 [90m-> null[0m[0m
+          [31m-[0m[0m target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:581781313195:targetgroup/production-vault-tg/d9ee108d43478c31" [90m-> null[0m[0m
+          [31m-[0m[0m type             = "forward" [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.ecs_vault.aws_lb_listener.vault_https[0m will be created
+[0m  [32m+[0m[0m resource "aws_lb_listener" "vault_https" {
+      [32m+[0m[0m arn                                                                   = (known after apply)
+      [32m+[0m[0m certificate_arn                                                       = "arn:aws:acm:us-east-1:581781313195:certificate/8fb54c83-5751-4a7f-85b8-b20db9f20bbf"
+      [32m+[0m[0m id                                                                    = (known after apply)
+      [32m+[0m[0m load_balancer_arn                                                     = "arn:aws:elasticloadbalancing:us-east-1:581781313195:loadbalancer/app/production-vault-alb/56369db06947f393"
+      [32m+[0m[0m port                                                                  = 443
+      [32m+[0m[0m protocol                                                              = "HTTPS"
+      [32m+[0m[0m region                                                                = "us-east-1"
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_header_name               = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_issuer_header_name        = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_leaf_header_name          = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_subject_header_name       = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_validity_header_name      = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_tls_cipher_suite_header_name              = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_tls_version_header_name                   = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_credentials_header_value   = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_headers_header_value       = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_methods_header_value       = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_origin_header_value        = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_expose_headers_header_value      = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_max_age_header_value             = (known after apply)
+      [32m+[0m[0m routing_http_response_content_security_policy_header_value            = (known after apply)
+      [32m+[0m[0m routing_http_response_server_enabled                                  = (known after apply)
+      [32m+[0m[0m routing_http_response_strict_transport_security_header_value          = (known after apply)
+      [32m+[0m[0m routing_http_response_x_content_type_options_header_value             = (known after apply)
+      [32m+[0m[0m routing_http_response_x_frame_options_header_value                    = (known after apply)
+      [32m+[0m[0m ssl_policy                                                            = "ELBSecurityPolicy-2016-08"
+      [32m+[0m[0m tags_all                                                              = (known after apply)
+      [32m+[0m[0m tcp_idle_timeout_seconds                                              = (known after apply)
+
+      [32m+[0m[0m default_action {
+          [32m+[0m[0m order            = (known after apply)
+          [32m+[0m[0m target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:581781313195:targetgroup/production-vault-tg/d9ee108d43478c31"
+          [32m+[0m[0m type             = "forward"
+        }
+
+      [32m+[0m[0m mutual_authentication (known after apply)
+    }
+
+[1m  # module.ecs_vault.aws_lb_listener.vault_redirect[0m will be created
+[0m  [32m+[0m[0m resource "aws_lb_listener" "vault_redirect" {
+      [32m+[0m[0m arn                                                                   = (known after apply)
+      [32m+[0m[0m id                                                                    = (known after apply)
+      [32m+[0m[0m load_balancer_arn                                                     = "arn:aws:elasticloadbalancing:us-east-1:581781313195:loadbalancer/app/production-vault-alb/56369db06947f393"
+      [32m+[0m[0m port                                                                  = 80
+      [32m+[0m[0m protocol                                                              = "HTTP"
+      [32m+[0m[0m region                                                                = "us-east-1"
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_header_name               = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_issuer_header_name        = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_leaf_header_name          = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_serial_number_header_name = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_subject_header_name       = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_mtls_clientcert_validity_header_name      = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_tls_cipher_suite_header_name              = (known after apply)
+      [32m+[0m[0m routing_http_request_x_amzn_tls_version_header_name                   = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_credentials_header_value   = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_headers_header_value       = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_methods_header_value       = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_allow_origin_header_value        = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_expose_headers_header_value      = (known after apply)
+      [32m+[0m[0m routing_http_response_access_control_max_age_header_value             = (known after apply)
+      [32m+[0m[0m routing_http_response_content_security_policy_header_value            = (known after apply)
+      [32m+[0m[0m routing_http_response_server_enabled                                  = (known after apply)
+      [32m+[0m[0m routing_http_response_strict_transport_security_header_value          = (known after apply)
+      [32m+[0m[0m routing_http_response_x_content_type_options_header_value             = (known after apply)
+      [32m+[0m[0m routing_http_response_x_frame_options_header_value                    = (known after apply)
+      [32m+[0m[0m ssl_policy                                                            = (known after apply)
+      [32m+[0m[0m tags_all                                                              = (known after apply)
+      [32m+[0m[0m tcp_idle_timeout_seconds                                              = (known after apply)
+
+      [32m+[0m[0m default_action {
+          [32m+[0m[0m order = (known after apply)
+          [32m+[0m[0m type  = "redirect"
+
+          [32m+[0m[0m redirect {
+              [32m+[0m[0m host        = "#{host}"
+              [32m+[0m[0m path        = "/#{path}"
+              [32m+[0m[0m port        = "443"
+              [32m+[0m[0m protocol    = "HTTPS"
+              [32m+[0m[0m query       = "#{query}"
+              [32m+[0m[0m status_code = "HTTP_301"
+            }
+        }
+
+      [32m+[0m[0m mutual_authentication (known after apply)
+    }
+
+[1mPlan:[0m [0m2 to add, 0 to change, 1 to destroy.
+[33m╷[0m[0m
+[33m│[0m [0m[1m[33mWarning: [0m[0m[1mDeprecated attribute[0m
+[33m│[0m [0m
+[33m│[0m [0m[0m  on .terraform/modules/vpc.vpc/vpc-flow-logs.tf line 28, in locals:
+[33m│[0m [0m  28:     "arn:${data.aws_partition.current[0].partition}:logs:${data.aws_region.current[0][4m.name[0m}:${data.aws_caller_identity.current[0].account_id}:log-group:${log_group.name}:*"[0m
+[33m│[0m [0m
+[33m│[0m [0mThe attribute "name" is deprecated. Refer to the provider documentation for details.
+[33m╵[0m[0m
+[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.

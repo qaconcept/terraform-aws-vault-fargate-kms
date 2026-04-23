@@ -74,6 +74,13 @@ resource "aws_security_group" "alb" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -123,14 +130,34 @@ resource "aws_lb_target_group" "vault" {
   }
 }
 
-resource "aws_lb_listener" "vault" {
+# NEW: Secure HTTPS Listener
+resource "aws_lb_listener" "vault_https" {
   load_balancer_arn = aws_lb.vault.arn
-  port              = 80
-  protocol          = "HTTP"
+  port              = "443"
+  protocol          = "HTTPS"
+  ssl_policy        = "ELBSecurityPolicy-2016-08"
+  certificate_arn   = var.certificate_arn # Passed in from variables.tf
 
   default_action {
     type             = "forward"
     target_group_arn = aws_lb_target_group.vault.arn
+  }
+}
+
+# NEW: Port 80 to 443 Redirect
+resource "aws_lb_listener" "vault_redirect" {
+  load_balancer_arn = aws_lb.vault.arn
+  port              = "80"
+  protocol          = "HTTP"
+
+  default_action {
+    type = "redirect"
+
+    redirect {
+      port        = "443"
+      protocol    = "HTTPS"
+      status_code = "HTTP_301"
+    }
   }
 }
 
@@ -230,7 +257,7 @@ resource "aws_ecs_service" "vault" {
   cluster         = aws_ecs_cluster.vault.id
   task_definition = aws_ecs_task_definition.vault.arn
   launch_type     = "FARGATE"
-  desired_count   = 0
+  desired_count   = 1
 
   network_configuration {
     subnets          = var.private_subnets
@@ -260,7 +287,7 @@ resource "aws_iam_role_policy" "vault_efs_access" {
           "elasticfilesystem:ClientWrite",
           "elasticfilesystem:ClientRootAccess"
         ]
-        Resource = "*" 
+        Resource = var.efs_file_system_arn
       }
     ]
   })

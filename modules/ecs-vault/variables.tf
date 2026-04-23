@@ -29,6 +29,16 @@ variable "efs_id" {
 }
 
 variable "efs_access_point_id" {
-  description = "The ID of the EFS Access Point for Vault storage"
   type        = string
+  description = "The ID of the EFS Access Point for Vault storage"
+}
+
+variable "efs_file_system_arn" {
+  type        = string
+  description = "Target EFS ARN for IAM policy restriction"
+}
+
+variable "certificate_arn" {
+  type        = string
+  description = "The ARN of the ACM certificate for the ALB"
 }

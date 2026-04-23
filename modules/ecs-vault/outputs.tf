@@ -1,6 +1,11 @@
 output "alb_dns_name" {
   value       = aws_lb.vault.dns_name
-  description = "The DNS name of the load balancer"
+  description = "The DNS name of the Vault ALB"
+}
+
+output "alb_zone_id" {
+  value       = aws_lb.vault.zone_id
+  description = "The canonical hosted zone ID of the ALB"
 }
 
 output "vault_task_role_arn" {
